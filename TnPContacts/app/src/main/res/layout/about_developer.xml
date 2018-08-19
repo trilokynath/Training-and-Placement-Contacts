@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout">
+
+        <ImageView
+            android:id="@+id/header_cover_image"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="centerCrop"
+
+            android:src="@drawable/nav_menu_header_bg" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+
+            android:clickable="true"
+            app:civ_border_width="3dp"
+            app:civ_border_color="#FFFFFFFF"
+
+            android:id="@+id/profile"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/header_cover_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-130dp"
+            android:elevation="5dp"
+            android:padding="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img" />
+
+        <RelativeLayout
+            android:id="@+id/profile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header_cover_image"
+            android:background="#ebca0707"
+            android:elevation="4dp"
+            android:paddingBottom="24dp">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="70dp"
+                android:text="Trilokynath Wagh"
+                android:textColor="#fff"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/designation"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Indave, Dhule, MH, IN"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/designation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="(Developer)"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/profile_layout"
+            android:layout_margin="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#fff"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:paddingTop="20dp">
+
+                <RelativeLayout
+                    android:id="@+id/contact_name_holder"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:paddingRight="-80pt"
+                    android:background="@drawable/border">
+
+
+                    <ImageView
+                        android:id="@+id/contact_tmb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:adjustViewBounds="true"
+                        android:cropToPadding="false"
+                        android:padding="5dp"
+                        app:srcCompat="@drawable/ic_person" />
+
+                    <TextView
+                        android:id="@+id/contact_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/contact_tmb"
+                        android:layout_toRightOf="@+id/contact_tmb"
+                        android:ellipsize="end"
+                        android:fontFamily="sans-serif"
+                        android:maxLines="1"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:text="Trilokynath Wagh" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/contact_mobile_holder"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="60dp"
+                    android:paddingRight="-80pt"
+                    android:background="@drawable/border">
+
+                    <ImageView
+                        android:id="@+id/contact_mobile_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:adjustViewBounds="true"
+                        android:padding="5dp"
+                        app:srcCompat="@drawable/ic_phone" />
+
+                    <TextView
+                        android:id="@+id/contact_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/contact_mobile_icon"
+                        android:layout_toRightOf="@+id/contact_mobile_icon"
+                        android:ellipsize="end"
+                        android:fontFamily="sans-serif"
+                        android:maxLines="1"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        tools:text="8390861559" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/contact_email_holder"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:paddingRight="-80pt"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border">
+
+                    <ImageView
+                        android:id="@+id/contact_email_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:adjustViewBounds="true"
+                        android:padding="5dp"
+                        app:srcCompat="@drawable/ic_email_big" />
+
+                    <TextView
+                        android:id="@+id/contact_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/contact_email_icon"
+                        android:layout_alignTop="@+id/contact_email_icon"
+                        android:ellipsize="end"
+                        android:fontFamily="sans-serif"
+                        android:maxLines="1"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        tools:text="trilokynathdfgsdfgdsfgfdsgfdsgwagh@gmail.com" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/contact_college_holder"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border"
+                    android:paddingRight="-80pt">
+
+                    <ImageView
+                        android:id="@+id/contact_comapny_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:adjustViewBounds="true"
+                        android:padding="5dp"
+                        app:srcCompat="@drawable/ic_company" />
+
+                    <TextView
+                        android:id="@+id/contact_college"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/contact_comapny_icon"
+                        android:layout_toRightOf="@+id/contact_comapny_icon"
+                        android:ellipsize="end"
+                        android:fontFamily="sans-serif"
+                        android:maxLines="1"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        tools:text="RCPIT, Shirpur" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/contact_social_holder"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border"
+                    android:paddingRight="-80pt">
+
+                    <ImageView
+                        android:id="@+id/contact_social_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:adjustViewBounds="true"
+                        android:padding="5dp"
+                        app:srcCompat="@drawable/fb" />
+
+                    <TextView
+                        android:id="@+id/contact_social"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/contact_social_icon"
+                        android:layout_toRightOf="@+id/contact_social_icon"
+                        android:ellipsize="end"
+                        android:fontFamily="sans-serif"
+                        android:maxLines="1"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        tools:text="fb/waghtrilokynath" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/contact_note_holder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border">
+
+                    <TextView
+                        android:id="@+id/contact_note"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="sans-serif-condensed"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:singleLine="false"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </android.support.constraint.ConstraintLayout>
+    </RelativeLayout>
+</ScrollView>

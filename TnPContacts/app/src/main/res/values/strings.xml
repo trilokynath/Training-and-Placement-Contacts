@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">T&amp;P Contacts</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="tab_text_1">HR</string>
+    <string name="tab_text_2">ALUMNI</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string-array name="SpinnerList">
+        <item>HR</item>
+        <item>Alumni</item>
+    </string-array>
+
+</resources>

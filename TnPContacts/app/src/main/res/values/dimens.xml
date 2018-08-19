@@ -1,0 +1,14 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="medium_margin">8dp</dimen>
+    <dimen name="normal_margin">8dp</dimen>
+    <dimen name="activity_margin">8dp</dimen>
+    <dimen name="contact_photo_size">20dp</dimen>
+    <dimen name="contact_actions_size">8dp</dimen>
+    <dimen name="contact_icons_size">20dp</dimen>
+    <dimen name="small_margin">8dp</dimen>
+</resources>

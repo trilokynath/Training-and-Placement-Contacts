@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/spinner"
+        app:showAsAction="always|collapseActionView"
+        android:icon="@drawable/ic_change"
+        android:title="HR" />
+
+    <item
+        android:id="@+id/filter"
+        android:checkable="false"
+        android:title="Filter"
+        app:showAsAction="always|collapseActionView" />
+
+    <item
+        android:id="@+id/refresh"
+        android:orderInCategory="100"
+        android:title="Refresh"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_import_hr"
+        android:orderInCategory="100"
+        android:title="Import HR Contacts"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_import_alumni"
+        android:orderInCategory="100"
+        android:title="Import Alumni Contacts"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_export_hr"
+        android:orderInCategory="100"
+        android:title="Export HR Contacts"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_export_alumni"
+        android:orderInCategory="100"
+        android:title="Export Alumni Contacts"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/about"
+        android:orderInCategory="100"
+        android:title="About Developer"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="always|collapseActionView"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        android:title="Search"/>
+
+</menu>
