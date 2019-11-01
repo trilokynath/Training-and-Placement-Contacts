@@ -59,7 +59,7 @@ public class About extends Activity implements View.OnClickListener{
         email.setText("trilokynathwagh@gmail.com");
         college.setText("RCPIT, Shirpur");
         social.setText("fb/waghtrilokynath");
-        bio.setText(Html.fromHtml("<font color='black'>This app is created by trilokynath dedicated to the RCPIT Training and Placement Department to maintain HR and Alumni Contacts. \uD83D\uDE0A</font>"));
+        bio.setText(Html.fromHtml("<font color='black'>This app is Created by trilokynath dedicated to the RCPIT Training and Placement Department to maintain HR and Alumni Contacts. \uD83D\uDE0A</font>"));
 
 
         name.setTextColor(Color.BLACK);
